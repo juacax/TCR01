@@ -19,7 +19,10 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button
+          onClick={() => setCount((count) => count + 1)}
+          data-testid="btn0"
+        >
           count is {count}
         </button>
 
@@ -31,7 +34,7 @@ function App() {
         </button>
 
         <CustomButton text="Sumar 1" />
-
+        <textarea maxLength={100} data-testid="textarea-test"></textarea>
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
